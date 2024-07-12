@@ -1,15 +1,15 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { Component1, useTestAction1 } from "~/components/component1/Component1";
+import { Component2, useTestAction2 } from "~/components/component2/Component2";
+
+export {useTestAction1, useTestAction2};
 
 export default component$(() => {
   return (
     <>
-      <h1>Hi 👋</h1>
-      <div>
-        Can't wait to see what you build with qwik!
-        <br />
-        Happy coding.
-      </div>
+      <Component1 />
+      <Component2 />
     </>
   );
 });
